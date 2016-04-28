@@ -1,0 +1,4 @@
+api:
+  build: ./src/api
+  ports:
+    - "8000:8000"
