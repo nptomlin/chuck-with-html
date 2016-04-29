@@ -9,7 +9,7 @@ git clone git@github.com:nptomlin/chuck-with-html.git
 
 Build and start the docker images.
 ```
-cd chuck-with-git
+cd chuck-with-html
 docker-compose up
 ```
 
