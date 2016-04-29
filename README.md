@@ -13,9 +13,9 @@ cd chuck-with-git
 docker-compose up
 ```
 
-Open a browser and visit site.
+Open a browser and navigate to.
 
 '''
-curl http://127.0.0.1/
+http://127.0.0.1/
 '''
 
