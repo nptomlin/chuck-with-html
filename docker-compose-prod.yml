@@ -1,0 +1,13 @@
+api:
+  image: nptomlin/chuck-api 
+
+site:
+  image: nptomlin/chuck-site 
+
+proxy:
+  image: nptomlin/chuck-proxy 
+  links:
+    - site
+    - api
+  ports:
+    - "80:80"
