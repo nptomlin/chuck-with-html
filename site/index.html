@@ -42,8 +42,8 @@
   $( document ).ready(function() {
 
     $( "#getFactButton" ).click(function() {
-      $.ajax({ url: "api/fact" }).done(function(response){
-        $('#chuckFact').text(response);
+      $.getJSON("api/fact").done(function(response){
+        $('#chuckFact').text(response.content);
       }).fail(function(){
         $('#chuckFact').text("Call failed. Sorry we can't all be like Chuck");
       });

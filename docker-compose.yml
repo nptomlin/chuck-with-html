@@ -1,4 +1,13 @@
 api:
-  build: ./src/api
+  build: ./api
+
+site:
+  build: ./site
+
+proxy:
+  build: ./proxy
+  links:
+    - site
+    - api
   ports:
-    - "8000:8000"
+    - "80:80"
